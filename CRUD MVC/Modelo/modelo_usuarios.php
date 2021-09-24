@@ -47,7 +47,7 @@ class Usuarios_modelo {
 
             $conexion_BD_borrar->query("DELETE FROM datos_usuarios WHERE id='$id_borrar'");
         
-            //header("Location:index.php");
+        //header("Location:index.php");
         }
         
         return $this->usuarios;
