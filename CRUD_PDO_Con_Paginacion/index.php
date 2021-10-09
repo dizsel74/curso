@@ -51,7 +51,8 @@ echo "Total de registros en BD " . $numero_registros. "<br/>";
   //  $filas=$query->fetchAll(PDO::FETCH_OBJ); 
 
  $filas=$conexion_BD->query("SELECT * FROM datos_usuarios LIMIT $inicio_desde,$registros_por_pagina")->fetchAll(PDO::FETCH_OBJ); //simplificado lo anterior
-/*-------------INICIO- INSERT ------*/
+
+ /*-------------INICIO- INSERT ------*/
 if(isset($_POST["nuevo"])){ // si han pulsado el boton inser
   
   $nombre_insertar=$_POST["Nom"];

@@ -15,7 +15,7 @@
 	$db_conexion=mysqli_connect($db_host,$db_usuario,$db_clave);  //conectarte a la BD
 	$busqueda=mysqli_real_escape_string ($db_conexion,$_GET["buscar"]);
 	
-	 if(mysqli_connect_errno()){
+	if(mysqli_connect_errno()){
  		echo "Fallo de conexion con BD";
 	 exit();
  	}
