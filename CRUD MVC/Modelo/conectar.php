@@ -12,7 +12,7 @@
             }catch(Exception $e){
 
                 echo "ERROR EN LINEA-> ". $e->getLine();
-                die ("UPS!". $e->getMessage());
+                die ("Oop!". $e->getMessage());
             }
             
             return $conexion_BD; //regresa la coneccion como resultado de la funcion

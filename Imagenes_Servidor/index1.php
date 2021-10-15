@@ -57,15 +57,9 @@
    <form action="index.php" method="POST" enctype="multipart/form-data">
       <table>
          <tr>
-            <td>
-               <label>Añadir imagen</label>
-            </td>
-            <td>
-               <input name="archivo" id="archivo" type="file" />
-            </td>
-            <td>
-               <input type="submit" name="subir" value="Subir imagen" />
-            </td>
+            <td><label>Añadir imagen</label></td>
+            <td><input name="archivo" id="archivo" type="file" /></td>
+            <td><input type="submit" name="subir" value="Subir imagen" /></td>
          </tr>
       </table>
    </form>
