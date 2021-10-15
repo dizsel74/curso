@@ -26,7 +26,7 @@ try{
 
      //$imh=imagecreatefromstring($contenido);
      //echo $imh;
-
+    
     $image= new imagick();
     $image->readImageBlob($contenido);
 echo '<img src="data:image/png;base64,' .  base64_decode($image->getimageblob())  . '" />';
