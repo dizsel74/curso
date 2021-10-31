@@ -5,7 +5,9 @@
 <title>Untitled Document</title>
 </head>
 <?php
-/*funcion que toma un enunciado (arreglo) y lo divide en sub enunciados (arregros) separandolos en los puntos gramaticales <.?!> luego vuelve a subdividirlo en palabra contando cada palabra que hay en los enunciados*/
+/*funcion que toma un enunciado (arreglo) y lo divide en sub enunciados (arregros) 
+	separandolos en los puntos gramaticales <.?!> luego vuelve a subdividirlo en palabras
+	contando cada palabra que hay en los enunciados*/
 
 function solution($s){
 	
@@ -13,16 +15,16 @@ function solution($s){
 	
 	$num=1; //contador de palabras inicia en 1 
 	$total=0;
-	$s= str_replace('?','.',$s); //remplaza caracteres de puntuación final < ?! > por <.>
+	$s= str_replace('?','.',$s); //remplaza caracteres de puntuación final < ?! > por <.> para separar los enunciados
 	$s= str_replace('!','.',$s);
 	
-	$s= str_replace('¡','',$s);//remplaza los demas signos ortograficos por espacios en blanco
+	$s= str_replace('¡','',$s);//remplaza los demas signos ortograficos por espacios en blanco para separar por palabra
 	$s= str_replace('¿','',$s);
 	$s= str_replace(',','',$s);
 	$s= str_replace(';','',$s);
 	$s= str_replace(':','',$s);
 
-	foreach(explode( '.', $s)as $index){ //($r=explode( '.', $s)as $index) //separa enunciados divididos por punto <.>
+	foreach(explode( '.', $s) as $index){ //($r=explode( '.', $s)as $index) //busca punto y separa en enunciados 
 	 	$contador=0;
 		
  			foreach (explode(' ',$index )as $index2){ // separa los enunciados en palabras
@@ -48,7 +50,7 @@ function solution($s){
 		
 }//function
 
-$s="We test coders. Give us a try? ¡Hola! ¿como; estan todos? : op , ";
+$="We test coders. Give us a try? ¡Hola! ¿como; estan todos? : op , ";
 solution($s);
 
 

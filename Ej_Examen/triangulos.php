@@ -1,26 +1,28 @@
 <?php
 
 function triangulo($n){
-	for($filas=0;$filas<=$n;$filas++){// recorre las filas
-			for($espacio=1;$espacio<=$filas;$espacio++){//llena las columnas con espacios en blanco de cada fila
-				echo "&nbsp";				
+	for($filas=0; $filas <= $n; $filas++){// recorre las filas
+
+			for($espacio=0; $espacio<$filas; $espacio++){//llena las columnas con espacios en blanco de cada fila
+				// echo "&nbsp";
+				echo"$espacio";				
 			}
-			for ($columna=2*$filas;$columna<=$n*2;$columna++){//llena las columnas de la fila con *'s
-				//echo"$columna";
-				echo"*";
+			for ($columna=2*$filas; $columna<=$n*2; $columna++){//llena las columnas de la fila con *'s
+					// echo"$columna";
+				 echo"*";
 			}	
 	echo "<br>"; //da el Salto de fila
 	}
 }
 
-triangulo (5); //llamas a la funcion y pasassel parametro
-
-/*
+triangulo (4); //llamas a la funcion y pasassel parametro
 
 
 
 
-/*echo "<br>/2///////////////////////<br>";
+
+
+echo "<br>/2///////////////////////<br>";
 for($e=8;$e>0;$e--){
 		for($q=$e;$q<=8;$q++){
 			echo"*"; //echo"$q";
@@ -49,10 +51,10 @@ for($e=0;$e<8;$e++){
 		for($q=$e;$q<8;$q++){
 			echo"*";
 		}
-echo " ---  Cuando e vale  $e<br>";
+echo " ---  Cuando e vale  $e <br />";
 	
 }
-/*
+
 function BinaryGap($n){
 	echo "<br>El binario de $n es ".decbin($n)."<br>";
 	
@@ -60,12 +62,13 @@ function BinaryGap($n){
 	
 	echo $valor."<br>"; 
 	
-	//$longitud = strlen($valor);
+    $longitud = strlen($valor);
 	$ceros = explode("1", $valor);
 	echo $ceros;
 	echo"<br>************************<br>";
-	//echo "Longitud ".$longitud;
+	echo "Longitud =".$longitud;
 	$count=0;
+	
 	foreach (count_chars($valor, 1) as $i => $val){
 		
 		if (chr($i)== 0){
@@ -78,11 +81,11 @@ function BinaryGap($n){
 	}
 	
 	
-	//foreach (){
-		//$numero_ceros = $numeros_ceros + 1;
-	//}
+	// foreach (){
+		$numero_ceros = $numeros_ceros + 1;
+	// }
 	
 }
  
- BinaryGap(20);*/
+ BinaryGap(20);
 ?>
