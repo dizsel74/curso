@@ -1,1 +1,1 @@
-# curso Pildoras Informaticas
+# curso PHP PI
